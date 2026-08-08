@@ -1,0 +1,138 @@
+% Gabriel Womelsdorf - Resume (LaTeX)
+% Compile with: pdflatex Gabriel_Womelsdorf_Resume.tex
+\documentclass[10pt]{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[
+  colorlinks=true,
+  urlcolor=black,
+  pdfauthor={Gabriel Womelsdorf},
+  pdftitle={Gabriel Womelsdorf - Resume}
+]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{parskip}
+
+% ---- Formatting ----
+\titleformat{\section}{\large\bfseries\uppercase}{}{0pt}{}
+\titlespacing*{\section}{0pt}{4pt}{4pt}
+\setlist[itemize]{leftmargin=*, itemsep=0pt, topsep=1pt}
+\setlength{\parskip}{0pt}
+\pagestyle{empty}
+
+% ---- Header ----
+\newcommand{\name}{GABRIEL WOMELSDORF}
+\newcommand{\citystate}{Newport News, Virginia}
+\newcommand{\phone}{(410)~591-0511}
+\newcommand{\email}{gabriel.womelsdorf.work@gmail.com}
+\newcommand{\linkedin}{linkedin.com/in/gabriel-womelsdorf-038987224}
+\newcommand{\github}{github.com/silverwarriorin}
+
+\begin{document}
+\begin{center}
+  {\Large\bfseries \name}\\
+  \citystate \quad $\cdot$ \quad \phone \quad $\cdot$ \quad
+  \href{mailto:\email}{\email}\\
+  \href{https://\linkedin}{\linkedin} \quad $\cdot$ \quad
+  \href{https://\github}{\github}
+\end{center}
+\raggedright
+
+% ---- Professional Summary ----
+\section*{Summary}
+Computer Engineering student (B.S. 2027) specializing in embedded systems, PCB
+design, power delivery, and applied hardware research. Owns technical work from
+system architecture and construction through qualification and experimental
+design, alongside 4+ years of production software experience progressing from
+intern to part-time lead engineer at Core4ce.
+
+% ---- Education ----
+\section*{Education}
+\textbf{Christopher Newport University} \hfill Newport News, VA\\
+B.S., Computer Engineering, \emph{expected 2027}; Minor, Mathematics\\
+\emph{CNU Summer Scholars Program, 2026}
+
+% ---- Skills ----
+\section*{Skills}
+\vspace{-8pt}
+\begin{multicols}{2}
+\textbf{Languages:} C, C++, Python, Java, C\#, Z80 Assembly \\
+\textbf{Embedded:} Zephyr/NCS, ESP-IDF, Nordic nRF52/nRF54, ESPHome \\
+
+\textbf{Hardware/Systems:} PCB Design (KiCad/Altium), Power Delivery, PMBus,
+SystemVerilog, Hardware Bring-Up \\
+\textbf{Software/Tools:} Docker, Apache NiFi, Django, Git, AWS
+\end{multicols}
+
+% ---- Projects ----
+\vspace{-10pt}
+\section*{Personal Research \& Projects}
+\begin{itemize}
+  \item \textbf{Tardis Embedded-AI Development Kit:} Proposed and secured
+  Core4ce grant support through CNU Summer Scholars for a modular, offline
+  embedded-AI platform that makes edge-AI workflows approachable for
+  nontechnical users. Owned end-to-end system architecture and implementation
+  across a reusable compute module, interchangeable carrier boards, embedded
+  firmware, and developer tooling; independently assembled and brought up the
+  prototype hardware.
+
+  \item \textbf{Air Sentry Neo:} Independently owned an indoor air-quality
+  research platform from architecture, electronic and mechanical design, PCB
+  layout and assembly, construction, firmware, and sensor integration through
+  qualification. Owned experimental design and manuscript development for
+  active unpublished additive-manufacturing research; technical methods and
+  results remain limited while the work is unpublished.
+
+  \item \textbf{Z80 Microcomputer:} Designed an 8-bit Z80-based microcomputer
+  and programmed a minimalist operating system in Z80 assembly supporting basic
+  I/O and memory routines.
+\end{itemize}
+
+% ---- Experience ----
+\section*{Engineering Experience}
+\textbf{Core4ce} \hfill Reston, VA\\
+\emph{Software R\&D Intern $\to$ Software Engineer $\to$ Lead Software Engineer
+(part-time)} \hfill Jun 2022 -- Present
+\begin{itemize}
+  \item Designed and implemented a production data pipeline from scratch in
+  Apache NiFi on AWS, including custom Java processors, IAM-compliant AWS
+  integrations, and reconfigurable routing that enables data-flow changes
+  without code changes.
+  \item Led end-to-end development of Cyberscape, owning architecture decisions,
+  sprint planning, client-facing deployments, and mentorship of junior
+  engineers.
+  \item Led a two-month testing overhaul for a previously untested subsystem,
+  substantially increasing coverage and bringing the component to a
+  production-ready state.
+  \item Expanded data-forensics capabilities with containerized Django services
+  and deployed an AWS honeypot to support threat research.
+\end{itemize}
+
+\textbf{Christopher Newport University} \hfill Newport News, VA\\
+\emph{Student Researcher (part-time)} \hfill Nov 2023 -- May 2025
+\begin{itemize}
+  \item Conducted exploratory research using CNC routing machines to fabricate
+  table-sized PCBs for the Super BigByte project.
+  \item Assembled, installed, and documented key power-delivery systems for the
+  coordinate detector's photomultipliers.
+\end{itemize}
+
+% ---- Leadership & Involvement ----
+\section*{Leadership \& Involvement}
+\textbf{The Captains Workshop, CNU} \hfill President \hfill Feb 2023 -- Present
+\begin{itemize}
+  \item Founded and lead CNU's 3D-printing club; organize hands-on workshops and
+  shared technical resources for students.
+\end{itemize}
+
+\textbf{Dean's Advisory Board, CNU School of Engineering} \hfill Member
+\hfill Oct 2023 -- Jan 2025
+\begin{itemize}
+  \item Served as liaison between students and the Dean, advocating for student
+  needs and proposing solutions to issues within the school.
+\end{itemize}
+
+\end{document}
