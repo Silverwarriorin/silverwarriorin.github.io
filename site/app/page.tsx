@@ -29,15 +29,15 @@ const researchProjects = [
   },
   {
     number: "03",
-    status: "Research under review · SENSORS 2026",
-    title: "Air Sentry",
+    status: "Active unpublished research · Details limited",
+    title: "Air Sentry Neo",
     description:
-      "I independently designed, assembled, and tested this indoor air-quality monitor through several hardware revisions. Related additive-manufacturing research is currently under review for SENSORS 2026 in Rotterdam.",
+      "I independently owned this indoor air-quality research platform end to end—from architecture, electronic and mechanical design, construction, firmware, and qualification through experimental design and manuscript development. Technical methods and results remain limited while the research is unpublished.",
     details: [
-      "Complete hardware ownership",
-      "PCB design and assembly",
-      "Firmware and sensor integration",
-      "Validation and enclosure design",
+      "End-to-end system architecture",
+      "Hardware, firmware, and construction",
+      "Qualification and experimental design",
+      "Research and manuscript development",
     ],
     image: {
       src: "/projects/air-sentry.jpg",
@@ -200,23 +200,29 @@ export default function Home() {
           <article className="tardis-feature">
             <div className="tardis-copy">
               <div className="tardis-topline">
-                <p className="project-status">01 · Private research project</p>
+                <p className="project-status">
+                  01 · Grant-funded development platform
+                </p>
                 <span>CNU Summer Scholars · Core4ce grant</span>
               </div>
               <h3>Tardis</h3>
               <p className="tardis-lead">
-                A modular, AI-accelerated embedded development platform built
-                around a reusable compute module and interchangeable carrier
-                boards.
+                A modular embedded-AI development kit designed to make edge AI
+                approachable for nontechnical users through a reusable compute
+                module and interchangeable carrier boards.
               </p>
               <p className="tardis-description">
                 I proposed the project, applied for and secured grant support
                 from Core4ce through CNU&apos;s Summer Scholars program, then
-                independently designed, assembled, and tested the complete
-                system with guidance from a faculty mentor. Public technical
-                details remain limited.
+                independently designed, assembled, and brought up the complete
+                system with guidance from a faculty mentor. My work spanned
+                system architecture, custom hardware, embedded software, and
+                developer tooling, with an emphasis on hiding platform
+                complexity without sacrificing flexibility.
               </p>
-              <span className="privacy-label">Private · Selected details only</span>
+              <span className="privacy-label">
+                Company-supported · Selected details
+              </span>
             </div>
 
             <figure className="tardis-photo">
@@ -237,15 +243,15 @@ export default function Home() {
               </div>
               <div>
                 <span>02</span>
-                <p>Custom hardware assembly and bring-up</p>
+                <p>Modular custom hardware and bring-up</p>
               </div>
               <div>
                 <span>03</span>
-                <p>Embedded firmware and developer tooling</p>
+                <p>Firmware and tools that abstract platform complexity</p>
               </div>
               <div>
                 <span>04</span>
-                <p>Faculty-mentored undergraduate research</p>
+                <p>Designed around nontechnical users</p>
               </div>
             </div>
           </article>
