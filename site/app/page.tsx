@@ -15,6 +15,22 @@ const Download = () => (
 const researchProjects = [
   {
     number: "02",
+    status: "Senior capstone · Team of two · In progress",
+    title: "BLE Sensor Network & Parallel Test Fixture",
+    description:
+      "My senior capstone, built with a teammate: an anonymized, privacy-by-design BLE sensor network for commercial and school deployments, engineered so a single node failure degrades coverage only locally rather than taking down the network, and so no individual can be identified or tracked even if a node is compromised. Each nRF-based node targets roughly six months of battery life. The deployment is paired with a custom test fixture that tests and programs a full 16-DUT panel in under two minutes at a target failure rate below 1 in 1,000, using a Raspberry Pi to orchestrate 16 independent, per-DUT MCUs over a bed-of-nails interface, with eFuse-isolated soft-start and per-rail short/voltage checks ahead of test and production firmware flashing. Every major module (power, per-DUT MCU, DUT interface) is field-swappable without soldering, and the whole rig runs from a Pi-hosted web UI instead of an onboard display. If funding comes through, the goal is to build and demo a fleet of 50+ nodes.",
+    details: [
+      "Anonymized BLE network—no individual tracking",
+      "Node-independent: a single failure stays local",
+      "nRF-based node, ~6-month battery life",
+      "16 independent per-DUT MCUs, bed-of-nails interface",
+      "16-board panel tested & programmed in <2 min",
+      "Field-swappable modules, Pi-hosted web UI",
+    ],
+    image: null,
+  },
+  {
+    number: "03",
     status: "Exploratory design · On hold",
     title: "RPi CM5 ATX Carrier Board",
     description:
@@ -28,16 +44,16 @@ const researchProjects = [
     image: null,
   },
   {
-    number: "03",
-    status: "Active unpublished research · Details limited",
+    number: "04",
+    status: "Active unpublished research · Sept 2025—Present",
     title: "Air Sentry Neo",
     description:
-      "I independently owned this indoor air-quality research platform end to end—from architecture, electronic and mechanical design, construction, firmware, and qualification through experimental design and manuscript development. Technical methods and results remain limited while the research is unpublished.",
+      "I independently own this indoor air-quality research platform end to end—architecture, PCB layout, firmware, and experimental design. It integrates five sensors over I2C with onboard SPI flash logging and BLE connectivity, housed in a custom enclosure and engineered to run more than two weeks on a single 350mAh battery. Technical methods and results remain limited while the research is unpublished.",
     details: [
-      "End-to-end system architecture",
-      "Hardware, firmware, and construction",
-      "Qualification and experimental design",
-      "Research and manuscript development",
+      "Five I2C sensors + SPI flash logging",
+      "BLE connectivity",
+      "2+ weeks on a 350mAh battery",
+      "Custom enclosure design",
     ],
     image: {
       src: "/projects/air-sentry.jpg",
@@ -157,7 +173,7 @@ export default function Home() {
               <p className="lead">
                 I&apos;m pursuing a B.S. in Computer Engineering and a minor in
                 Mathematics at Christopher Newport University, graduating in
-                2027.
+                2027—and looking for full-time roles starting May 2027.
               </p>
               <p>
                 My work moves between circuit boards and code: laying out
@@ -203,13 +219,15 @@ export default function Home() {
                 <p className="project-status">
                   01 · Grant-funded development platform
                 </p>
-                <span>CNU Summer Scholars · Core4ce grant</span>
+                <span>CNU Summer Scholars · Core4ce grant · Jun—Jul 2025</span>
               </div>
               <h3>Tardis</h3>
               <p className="tardis-lead">
-                A modular embedded-AI development kit designed to make edge AI
-                approachable for nontechnical users through a reusable compute
-                module and interchangeable carrier boards.
+                A modular embedded-AI development kit that pairs an MCU
+                system-on-module (built around the Nordic nRF54LM20B) with an
+                AI accelerator on a single, easy-to-breakout carrier
+                board—making edge AI approachable for developers with less
+                hardware experience.
               </p>
               <p className="tardis-description">
                 I proposed the project, applied for and secured grant support
@@ -442,6 +460,9 @@ export default function Home() {
             Have an interesting problem?
           </p>
           <h2>Let&apos;s build something that works.</h2>
+          <p className="card-kicker">
+            Open to full-time roles · Starting May 2027
+          </p>
           <a
             className="contact-email"
             href="mailto:gabriel.womelsdorf.work@gmail.com"
