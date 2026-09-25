@@ -22,9 +22,9 @@ const researchProjects = [
     details: [
       "Anonymized BLE network—no individual tracking",
       "Node-independent: a single failure stays local",
-      "nRF-based node, ~6-month battery life",
+      "nRF-based node, targeting ~6-month battery life",
       "16 independent per-DUT MCUs, bed-of-nails interface",
-      "16-board panel tested & programmed in <2 min",
+      "16-board panel designed to be tested & programmed in <2 min",
       "Field-swappable modules, Pi-hosted web UI",
     ],
     image: null,
@@ -52,7 +52,7 @@ const researchProjects = [
     details: [
       "Five I2C sensors + SPI flash logging",
       "BLE connectivity",
-      "2+ weeks on a 350mAh battery",
+      "~3.5 weeks on a 350mAh battery",
       "Custom enclosure design",
     ],
     image: {
@@ -183,7 +183,7 @@ export default function Home() {
                 engineering, and applied hardware research.
               </p>
               <p>
-                Alongside school, I&apos;ve spent more than three years growing
+                Alongside school, I&apos;ve spent more than four years growing
                 from intern to lead software engineer at Core4ce—experience that
                 taught me how to carry technical work from early architecture
                 through production deployment.
@@ -219,7 +219,7 @@ export default function Home() {
                 <p className="project-status">
                   01 · Grant-funded development platform
                 </p>
-                <span>CNU Summer Scholars · Core4ce grant · Jun—Jul 2025</span>
+                <span>CNU Summer Scholars · Core4ce grant · Jun—Jul 2026</span>
               </div>
               <h3>Tardis</h3>
               <p className="tardis-lead">
@@ -311,7 +311,7 @@ export default function Home() {
             <span className="research-note-mark">CNU</span>
             <div>
               <p className="card-kicker">University research · 2023—2025</p>
-              <h3>Super BigByte Project</h3>
+              <h3>Super BigBite Project</h3>
               <p>
                 Explored CNC fabrication of table-sized PCBs and assembled key
                 power-delivery systems for the project&apos;s photo-multiplier
